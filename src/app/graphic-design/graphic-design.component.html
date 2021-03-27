@@ -1,0 +1,10 @@
+<h3>RANDOM ARTS</h3>
+
+<h2>Welcome to see my random arts!</h2>
+
+<div class="graphic-design-item" *ngFor="let shipping of shippingCosts | async">
+  <span>{{ graphic-design.type }}</span>
+  <span>{{ graphic-design.price | currency }}</span>
+</div>
+
+<app-portfolio-lightbox portfolioURL="/assets/graphic.json"></app-portfolio-lightbox>
